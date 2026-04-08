@@ -17,8 +17,6 @@ def newton_raphson(f, df, x0, tol_porcentaje, max_iter=100):
             print("Error: La derivada es cero. El método no puede continuar.")
             return None
         
-        # --- FÓRMULA DE NEWTON-RAPHSON ---
-        # xi+1 = xi - f(xi) / f'(xi)
         xi = xi_anterior - (f_xi / df_xi)
         
         iteraciones += 1        
